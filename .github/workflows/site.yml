@@ -20,6 +20,7 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        working-directory: site
       - name: Build static site
         run: pnpm run build && pnpm exec next export
         working-directory: site
