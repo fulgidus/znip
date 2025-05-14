@@ -1,0 +1,29 @@
+name: Build Zig Clipboard Manager
+
+on:
+  push:
+    tags:
+      - "zig-app-v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Zig
+        uses: goto-bus-stop/setup-zig@v2
+        with:
+          version: master
+      - name: Build
+        run: |
+          cd zig-app
+          zig build-exe main.zig
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: clipboard-manager-${{ matrix.os }}
+          path: zig-app/zig-out/bin/

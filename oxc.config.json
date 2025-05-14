@@ -1,0 +1,6 @@
+{
+    "root": true,
+    "files": [
+        "site/**/*.{js,ts,tsx,jsx}"
+    ]
+}
