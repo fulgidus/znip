@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: clipboard-manager-${{ matrix.os }}
-          path: zig-app/zig-out/bin/
+          path: zig-app/main*
