@@ -25,5 +25,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: clipboard-manager-${{ matrix.os }}
+          name: znip-${{ matrix.os }}
           path: zig-app/main*
