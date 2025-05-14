@@ -1,0 +1,13 @@
+[1747260395]         // defer child.deinit(); // non serve pi— in Zig 0.14.0
+
+[1747260401] 
+    main: main.zig:20:43
+    WinStartup: C:\Users\aless\AppData\Loca
+[1747260407] 
+const std = @import("../std.zig");
+^~~~~
+referenced by:
+    main: main.zig:20:43
+    WinStartup: C:\Users\aless\AppData\Loca
+[1747260417] main.exe
+[1747260428] .\main.exe
