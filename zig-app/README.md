@@ -1,20 +1,20 @@
-# Clipboard Manager Zig multipiattaforma
+# Cross-platform Clipboard Manager in Zig
 
-Questa applicazione, scritta in Zig, permette di gestire la cronologia degli appunti (clipboard history) su Windows, Linux e macOS.
+This application, written in Zig, allows you to manage clipboard history on Windows, Linux, and macOS.
 
-## Funzionalità principali
-- Salvataggio automatico degli appunti copiati
-- Ricerca e selezione rapida dalla cronologia
-- Supporto multipiattaforma (Windows, Linux, macOS)
+## Main Features
+- Automatic saving of copied clipboard entries
+- Fast search and selection from history
+- Cross-platform support (Windows, Linux, macOS)
 
-## Compilazione
-- Per Windows:
+## Build
+- For Windows:
   zig build-exe main.zig
-- Per Linux/macOS:
+- For Linux/macOS:
   zig build-exe main.zig
 
-## Requisiti
+## Requirements
 - [Zig](https://ziglang.org/download/)
 
-## Build automatica
-La build multipiattaforma viene gestita tramite GitHub Actions (vedi file `.github/workflows/zig.yml`).
+## Automated Build
+Cross-platform builds are managed via GitHub Actions (see `.github/workflows/zig.yml`).

@@ -1,14 +1,14 @@
 # znip
 
-Questo repository contiene:
+This repository contains:
 
-- **zig-app/**: Clipboard manager multipiattaforma scritto in Zig (Windows, Linux, macOS)
-- **site/**: Sito web Next.js 15+ per la documentazione e la presentazione del progetto, pronto per il deploy su GitHub Pages
+- **zig-app/**: Cross-platform clipboard manager written in Zig (Windows, Linux, macOS)
+- **site/**: Next.js 15+ website for documentation and project showcase, ready for deployment on GitHub Pages
 
-## Versioning e CI/CD
+## Versioning and CI/CD
 
-- Le pipeline di build e deploy vengono attivate solo al push di un tag che inizia con:
-  - `zig-app-v` per la build multipiattaforma Zig
-  - `site-v` per il deploy del sito web
+- Build and deploy pipelines are triggered only when pushing a tag that starts with:
+  - `zig-app-v` for the Zig cross-platform build
+  - `site-v` for the website deployment
 
-Consulta le cartelle `.github/workflows/` per i dettagli sulle pipeline.
+See the `.github/workflows/` folder for pipeline details.
